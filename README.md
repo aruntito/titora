@@ -1,16 +1,12 @@
 <div align="center">
 
-<img src="./assets/titora-ecosystem-banner.svg" width="100%" alt="TITORA ecosystem" />
+<img src="./assets/titora-ecosystem-banner.svg" width="100%" alt="TITORA projects" />
 
 # TITORA
 
-**Intelligence infrastructure for interconnected digital systems.**
+**Arun Tito's personal technology project ecosystem.**
 
-<p>
-  <a href="https://github.com/aruntito/titora">Repository</a> ·
-  <a href="https://github.com/aruntito/doob-public-architecture">DOOB</a> ·
-  <a href="https://github.com/aruntito/doob-queue-systems">DOOB Queue Systems</a>
-</p>
+<p>Independent systems · Research · Infrastructure · Product experiments</p>
 
 </div>
 
@@ -18,155 +14,269 @@
 
 ## What is TITORA?
 
-TITORA is the umbrella architecture and research layer behind a set of interconnected systems for **orchestration, intelligence, semantic knowledge, growth operations, automation, and execution**.
+**TITORA is the umbrella identity for Arun Tito's personal technology projects.**
 
-It is not intended to be another standalone SaaS product. This repository acts as the **system map, architectural index, and documentation entry point** for the ecosystem.
+This repository is an index and public map of the systems I build, research, and experiment with across software, AI, infrastructure, growth, knowledge, resilience, and operational systems.
 
-> Digital products become more useful when their intelligence, execution, knowledge, and operational infrastructure can work as connected systems rather than isolated applications.
+The projects are **independent**. They are not one monolithic platform, and they do not need to become one.
 
-## Ecosystem
+Some projects have conceptual relationships with each other, but each project should remain independently useful, understandable, and maintainable.
+
+> **Build systems that make complex environments observable, understandable, and actionable.**
+
+That is a recurring thesis across the infrastructure and resilience projects, not a claim that every TITORA project solves the same problem.
+
+---
+
+## The TITORA Project Map
 
 ```mermaid
 flowchart TB
-    T[TITORA CORE]
-    T --> D[DOOB]
-    T --> K[KARADAVI]
-    T --> S[SMXM]
-    D --> D1[Orchestration]
-    D --> D2[Execution]
-    D --> D3[Operational Intelligence]
-    K --> K1[Knowledge]
-    K --> K2[Semantic Systems]
-    K --> K3[Trust & Perception]
-    S --> S1[Growth]
-    S --> S2[Media Operations]
-    S --> S3[Automation]
+    A["ARUN TITO"] --> T["TITORA PROJECTS"]
+    T --> D["DOOB"]
+    T --> K["KARADAVI"]
+    T --> S["SMXM"]
+    T --> I["Infrastructure & Research Systems"]
+    I --> TM["TIME-MACHINE"]
+    I --> P["PULSE"]
+    I --> TR["TRACE"]
+    I --> B["BLACKBOX"]
+    I --> R["RECOVER"]
+    I --> F["FIRSTLIGHT"]
+    I --> W["WAKE"]
+    I --> G["GRID"]
+    I --> GH["GHOST"]
+    I --> E["EVAC"]
+    I --> RO["RELIEF-OS"]
 ```
 
-### Core systems
+### Product / platform projects
 
-| System | Role | Direction |
-| --- | --- | --- |
-| **DOOB** | Growth intelligence & orchestration | Connect signals, goals, providers, execution, and operational workflows. |
-| **KARADAVI** | Knowledge & semantic infrastructure | Build structured, editorially controlled knowledge and connected concepts. |
-| **SMXM** | Growth & media operations | Build systems for marketing, distribution, media execution, and scalable growth operations. |
+| Project | Focus |
+| --- | --- |
+| **DOOB** | Growth intelligence, orchestration, signals, goals, providers, and execution. |
+| **KARADAVI** | Knowledge, entities, semantic relationships, and editorially controlled understanding. |
+| **SMXM** | Growth, marketing, media operations, and distribution systems. |
+| **TITORA** | The personal project ecosystem, identity, and public architecture index. |
 
-TITORA provides the **system-level context**. Individual products can evolve independently while remaining connected through shared architectural principles.
+### Infrastructure & research systems
 
----
-
-## Architecture principles
-
-### Systems over isolated features
-Features should belong to a coherent system with clear ownership, boundaries, and operational purpose.
-
-### Intelligence must lead to execution
-Data, signals, models, and knowledge are useful when they improve a decision, workflow, or measurable outcome.
-
-### Explicit boundaries
-Each system should have a clear responsibility. Avoid turning the ecosystem into a single tightly coupled application.
-
-### Human control where it matters
-Automation can accelerate execution, but consequential publishing, destructive operations, and editorial decisions should have explicit controls and approval boundaries.
-
-### Observable by default
-Operational systems should expose useful state, failures, events, and execution history rather than relying on hidden behavior.
-
-### Durable infrastructure
-Prefer simple primitives, documented contracts, replay-safe workflows, idempotent operations, and replaceable providers over fragile integrations.
+| Project | Core question |
+| --- | --- |
+| **TIME-MACHINE** | How did we get here? |
+| **PULSE** | What just changed? |
+| **TRACE** | Why did it change? |
+| **BLACKBOX** | What actually happened? |
+| **RECOVER** | How do we get back to a known-good state? |
+| **FIRSTLIGHT** | What should happen first? |
+| **WAKE** | Who needs to act? |
+| **GRID** | What is connected to what? |
+| **GHOST** | What exists that we don't know about? |
+| **EVAC** | How does a system respond under pressure? |
+| **RELIEF-OS** | How do we allocate help effectively? |
 
 ---
 
-## Development directions
+## The 11-system resilience family
 
-- **Distributed systems** — service boundaries, queues, workers, and execution coordination
-- **Operational intelligence** — signals, state, telemetry, and decision support
-- **Orchestration** — coordinating goals, providers, workflows, and execution
-- **Semantic infrastructure** — entities, relationships, canonical concepts, and knowledge graphs
-- **Automation** — repeatable workflows with explicit controls and observability
-- **Growth infrastructure** — acquisition, distribution, media operations, and measurement
-- **Scalable execution** — turning intent into reliable, traceable operations
+The 11 infrastructure/research projects are deliberately separate systems.
 
-These are architectural directions, not claims that every layer is already production-complete.
-
----
-
-## Repository role
-
-This repository intentionally stays lightweight.
-
-It should contain:
-
-- ecosystem-level architecture
-- system boundaries and responsibilities
-- technical principles
-- cross-project decisions
-- public documentation
-- links to implementation repositories
-
-Implementation code belongs in the individual system repositories unless there is a strong reason for it to live here.
+Their primary conceptual chain is:
 
 ```text
-titora/
-├── assets/
-├── docs/
-│   ├── architecture.md
-│   └── roadmap.md
-├── .github/
-├── CONTRIBUTING.md
-├── SECURITY.md
-├── LICENSE
-└── README.md
+TIME-MACHINE
+      ↓
+    PULSE
+      ↓
+    TRACE
+      ↓
+  BLACKBOX
+      ↓
+   RECOVER
+      ↓
+ FIRSTLIGHT
+      ↓
+     WAKE
 ```
 
----
+Two systems provide infrastructure context:
 
-## Roadmap
+- **GRID** — dependency topology and relationships
+- **GHOST** — unknown, orphaned, and inventory discrepancies
 
-### Foundation
-- [x] Establish TITORA as the ecosystem-level repository
-- [x] Define the primary system boundaries
-- [x] Publish the public architecture index
-- [ ] Expand cross-system architecture documentation
+Two systems explore resilience and research:
 
-### Infrastructure
-- [ ] Define common event and execution concepts
-- [ ] Document observability and operational conventions
-- [ ] Define integration and provider boundary patterns
-- [ ] Document security boundaries and trust assumptions
+- **EVAC** — simulation and response under pressure
+- **RELIEF-OS** — resource allocation and logistics
 
-### Intelligence
-- [ ] Map signal → decision → execution flows
-- [ ] Document semantic/entity infrastructure
-- [ ] Define cross-system knowledge and context boundaries
-
-### Ecosystem
-- [ ] Publish system-level architecture diagrams
-- [ ] Link production and public implementation repositories
-- [ ] Maintain architecture decision records
-- [ ] Establish release/change documentation
+This is an architectural relationship, **not a requirement to merge the repositories or create a distributed monolith**.
 
 ---
 
-## Related projects
+## Shared engineering principles
 
-- [DOOB Public Architecture](https://github.com/aruntito/doob-public-architecture)
-- [DOOB Queue Systems](https://github.com/aruntito/doob-queue-systems)
+### Independent boundaries
 
-## Contributing
+Every project should have a clear mission, explicit inputs and outputs, domain-specific semantics, testable behavior, identifiable failure modes, and independent usefulness.
 
-TITORA is primarily an architecture and documentation hub.
+### Evidence before certainty
 
-Read [CONTRIBUTING.md](./CONTRIBUTING.md) before proposing changes.
+Systems dealing with observation, history, incidents, or investigation should preserve provenance, confidence, uncertainty, missing information, and conflicting evidence.
 
-For security issues, follow [SECURITY.md](./SECURITY.md).
+### Facts vs interpretation
+
+A system should not silently turn:
+
+- correlation into causation
+- observation into explanation
+- notification into ownership
+- unknown into malicious intent
+- simulation into prediction
+- attempted recovery into verified recovery
+
+### Integration only where justified
+
+Projects may eventually communicate through explicit contracts, but conceptual similarity alone is not sufficient reason to couple them.
+
+Prefer explicit contracts, strong domain models, deterministic behavior where practical, observable state, reproducibility, explainability, verification, and graceful failure.
+
+Avoid unnecessary distributed-system complexity.
+
+---
+
+## Development model
+
+The 11 infrastructure projects are being approached in conceptual waves:
+
+### Wave 1
+- PULSE
+- GRID
+- TRACE
+
+### Wave 2
+- BLACKBOX
+- RECOVER
+- WAKE
+- FIRSTLIGHT
+
+### Wave 3
+- GHOST
+- TIME-MACHINE
+
+### Wave 4
+- EVAC
+- RELIEF-OS
+
+The waves represent architecture and dependency thinking. They do **not** mean implementation of one repository must literally block another.
+
+---
+
+## Public vs private engineering
+
+The public GitHub repositories are intended to remain clean public surfaces for architecture, research, documentation, and source code.
+
+Detailed implementation context may remain local.
+
+The intended private engineering layer is:
+
+```text
+AGENTS.md
+
+.agent/
+├── requirements.md
+├── data-model.md
+├── interfaces.md
+├── invariants.md
+└── implementation.md
+```
+
+These files are for local development and agent context.
+
+**.gitignore is not a security boundary.** Private information should never be placed in a repository merely because it is ignored by Git.
+
+The private engineering layer should only be published when explicitly intended.
+
+---
+
+## ChatGPT + Antigravity workflow
+
+Each major project has its own ChatGPT Project with **Project-only memory**.
+
+The division of responsibility is:
+
+```text
+CHATGPT PROJECT
+Architecture
+Research
+Requirements
+Domain modeling
+Design decisions
+Failure analysis
+Implementation planning
+        │
+        ▼
+ANTIGRAVITY
+Local repository inspection
+Implementation
+Testing
+Verification
+Cleanup
+        │
+        ▼
+GITHUB
+Public source
+Architecture
+Research
+Documentation
+```
+
+When the local repository is eventually provided to Antigravity, the corresponding ChatGPT Project should first understand the actual repository state before generating implementation instructions.
+
+The final Antigravity instruction should be **one coherent, project-specific execution prompt**, based on the real repository rather than assumptions.
+
+---
+
+## What this repository is not
+
+TITORA is **not**:
+
+- a claim that all projects are one platform
+- a monolithic codebase
+- a replacement for the individual repositories
+- proof that every documented system is production-ready
+- a reason to introduce unnecessary cross-project infrastructure
+
+It is a public map of a personal project ecosystem.
+
+---
+
+## Projects
+
+### Core projects
+
+- [DOOB](https://github.com/aruntito/doob)
+- [KARADAVI](https://github.com/aruntito/karadavi)
+- [SMXM](https://github.com/aruntito/smxm)
+- [TITORA](https://github.com/aruntito/titora)
+
+### Infrastructure & research
+
+- [TIME-MACHINE](https://github.com/aruntito/time-machine)
+- [PULSE](https://github.com/aruntito/pulse)
+- [TRACE](https://github.com/aruntito/trace)
+- [BLACKBOX](https://github.com/aruntito/blackbox)
+- [RECOVER](https://github.com/aruntito/recover)
+- [FIRSTLIGHT](https://github.com/aruntito/firstlight)
+- [WAKE](https://github.com/aruntito/wake)
+- [GRID](https://github.com/aruntito/grid)
+- [GHOST](https://github.com/aruntito/ghost)
+- [EVAC](https://github.com/aruntito/evac)
+- [RELIEF-OS](https://github.com/aruntito/relief-os)
 
 ---
 
 <div align="center">
 
-**Operational ecosystems · Intelligence infrastructure · Scalable digital systems**
-
-Built and maintained by **Arun Dharavath**
+**TITORA · Personal technology projects by Arun Tito**
 
 </div>
