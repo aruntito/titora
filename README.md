@@ -36,6 +36,7 @@ flowchart TB
     T --> D["DOOB"]
     T --> K["KARADAVI"]
     T --> S["SMXM"]
+    T --> C["CAMERA APP"]
     T --> I["Infrastructure & Research Systems"]
     I --> TM["TIME-MACHINE"]
     I --> P["PULSE"]
@@ -57,6 +58,7 @@ flowchart TB
 | **DOOB** | Growth intelligence, orchestration, signals, goals, providers, and execution. |
 | **KARADAVI** | Knowledge, entities, semantic relationships, and editorially controlled understanding. |
 | **SMXM** | Growth, marketing, media operations, and distribution systems. |
+| **CAMERA APP** | Creator-focused camera, recording, project organization, and teleprompter workflow. |
 | **TITORA** | The personal project ecosystem, identity, and public architecture index. |
 
 ### Infrastructure & research systems
@@ -265,6 +267,7 @@ For contribution and governance guidance, see [CONTRIBUTING.md](CONTRIBUTING.md)
 
 ### Core projects
 
+- **CAMERA APP** — planned creator-focused camera and recording project
 - **DOOB** — separate project; public architecture surfaces are linked below
 - **KARADAVI** — separate project; public entry surface: [enterKARADAVI](https://github.com/aruntito/enterkaradavi)
 - [SMXM](https://github.com/aruntito/smxm)
