@@ -254,10 +254,19 @@ It is a public map of a personal project ecosystem.
 
 ### Core projects
 
-- [DOOB](https://github.com/aruntito/doob)
-- [KARADAVI](https://github.com/aruntito/karadavi)
+- **DOOB** — separate project; public architecture surfaces are linked below
+- **KARADAVI** — separate project; public entry surface: [enterKARADAVI](https://github.com/aruntito/enterkaradavi)
 - [SMXM](https://github.com/aruntito/smxm)
 - [TITORA](https://github.com/aruntito/titora)
+
+### Public implementation / architecture surfaces
+
+- [DOOB Architecture Console](https://github.com/aruntito/doob-architecture-console)
+- [DOOB Observability](https://github.com/aruntito/doob-observability)
+- [enterKARADAVI](https://github.com/aruntito/enterkaradavi)
+- [SMXM](https://github.com/aruntito/smxm)
+
+These links are public surfaces that can be verified. TITORA does not assume that a public surface represents the complete implementation of the corresponding project.
 
 ### Infrastructure & research
 
