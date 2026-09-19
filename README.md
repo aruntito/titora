@@ -250,6 +250,17 @@ It is a public map of a personal project ecosystem.
 
 ---
 
+## Documentation
+
+- [Project map](docs/projects.md) — project inventory and core questions
+- [Architecture](docs/architecture.md) — ecosystem boundaries and conceptual relationships
+- [Roadmap](docs/roadmap.md) — evolution of the TITORA index
+- [Status](docs/status.md) — status vocabulary and verification rules
+- [Architecture decisions](docs/decisions/) — decisions that define ecosystem boundaries
+- [Changelog](CHANGELOG.md) — changes to this public TITORA repository
+
+For contribution and governance guidance, see [CONTRIBUTING.md](CONTRIBUTING.md), [SECURITY.md](SECURITY.md), [SUPPORT.md](SUPPORT.md), and [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md).
+
 ## Projects
 
 ### Core projects
