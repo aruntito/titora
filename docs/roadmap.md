@@ -12,6 +12,21 @@ This roadmap governs the TITORA index and architecture layer. It is not a delive
 - [ ] Add architecture decision records as decisions are made
 - [ ] Add project status metadata only when verified
 
+## Today's project addition — Camera App
+
+The Camera App is a new planned creator-tool project added to the TITORA ecosystem on **2026-09-19**.
+
+Current direction from today's product planning:
+
+- creator-focused camera experience
+- dedicated **Creator Suite** workflow
+- **Save to Project** for organizing captured clips
+- integrated **Teleprompter** workflow
+- free + Pro + lifetime purchase monetization direction
+- feature parity research against modern flagship camera workflows, while keeping the product's own identity
+
+Status: **Planned**. These are product-plan items, not claims that the app is implemented or production-ready.
+
 ## Phase 2 — Project map
 
 - [x] Document missions and core questions for the 11 systems
