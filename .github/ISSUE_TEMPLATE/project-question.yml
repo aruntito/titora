@@ -1,0 +1,32 @@
+name: Project question
+description: Ask a focused question about TITORA's project map or public architecture.
+title: "[Question]: "
+labels:
+  - question
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Keep the question specific and based on public repository information.
+  - type: input
+    id: project
+    attributes:
+      label: Project
+      description: Which TITORA project or document is this about?
+      placeholder: e.g. PULSE, GRID, or docs/architecture.md
+    validations:
+      required: true
+  - type: textarea
+    id: question
+    attributes:
+      label: Question
+      description: What are you trying to understand?
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Include relevant links, sections, or evidence.
+    validations:
+      required: false
