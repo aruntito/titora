@@ -1,0 +1,38 @@
+name: Documentation or architecture proposal
+description: Propose a concrete improvement to the public TITORA ecosystem documentation.
+title: "[Proposal]: "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Proposals should improve clarity, correctness, maintainability, or explicit system boundaries.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What is unclear, incorrect, missing, or difficult today?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed change
+      description: What should change?
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Architecture impact
+      description: Does this change project ownership, coupling, contracts, or public/private boundaries?
+    validations:
+      required: false
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Link to the relevant public files, repositories, or documentation.
+    validations:
+      required: false
