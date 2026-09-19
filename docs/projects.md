@@ -14,7 +14,7 @@ This is a portfolio map, not a claim that these systems share one runtime, deplo
 | DOOB | Growth intelligence, orchestration, and execution |
 | KARADAVI | Knowledge and semantic infrastructure |
 | SMXM | Growth, marketing, media operations, and distribution |
-
+| CAMERA APP | Creator-focused camera and recording workflow |
 ### Infrastructure & research family
 
 | Project | Mission | Core question |
