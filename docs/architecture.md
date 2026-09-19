@@ -2,87 +2,132 @@
 
 ## Purpose
 
-TITORA is the ecosystem-level coordination and documentation layer for a set of independently evolving digital systems.
+TITORA is the personal project ecosystem and public architecture index for Arun Tito's independent technology projects.
 
-The architecture is intentionally **federated** rather than monolithic.
+It is a federation of projects, not a monolith.
+
+## System map
 
 ```mermaid
 flowchart TB
-    T[TITORA]
-    T --> D[DOOB]
-    T --> K[KARADAVI]
-    T --> S[SMXM]
-    D --> DE[Execution]
-    D --> DI[Operational Intelligence]
-    K --> KN[Knowledge]
-    K --> SE[Semantic Infrastructure]
-    S --> GR[Growth]
-    S --> MO[Media Operations]
+    A["ARUN TITO"] --> T["TITORA PROJECT ECOSYSTEM"]
+    T --> D["DOOB"]
+    T --> K["KARADAVI"]
+    T --> S["SMXM"]
+    T --> R["11 INFRASTRUCTURE / RESEARCH SYSTEMS"]
+    R --> TM["TIME-MACHINE"]
+    R --> P["PULSE"]
+    R --> TR["TRACE"]
+    R --> B["BLACKBOX"]
+    R --> REC["RECOVER"]
+    R --> F["FIRSTLIGHT"]
+    R --> W["WAKE"]
+    R --> G["GRID"]
+    R --> GH["GHOST"]
+    R --> E["EVAC"]
+    R --> RO["RELIEF-OS"]
 ```
 
-## System boundaries
+## Architecture layers
 
-### DOOB
+### Personal ecosystem layer
 
-DOOB is responsible for growth intelligence, orchestration, signals, goals, providers, and execution workflows.
+**TITORA** provides identity, project discovery, public documentation, and cross-project architectural context.
 
-Its architectural concern is turning operational intent into observable execution.
+It should not become a shared implementation repository.
 
-### KARADAVI
+### Independent product systems
 
-KARADAVI is responsible for structured knowledge, entities, relationships, semantic context, and editorially controlled knowledge publishing.
+**DOOB, KARADAVI, and SMXM** are independent projects with their own product boundaries and implementation decisions.
 
-Its architectural concern is turning information into durable, connected knowledge.
+TITORA may document their relationship but does not own their internal architecture.
 
-### SMXM
+### Infrastructure and research family
 
-SMXM is responsible for growth and media operations.
+The 11 systems explore observation, investigation, response, recovery, topology, discovery, simulation, and logistics.
 
-Its architectural concern is distribution, marketing workflows, media execution, and growth infrastructure.
+They share principles, not necessarily code.
 
-## TITORA's responsibility
+## Reasoning chain
 
-TITORA should not become a shared dumping ground for implementation code.
+```mermaid
+flowchart LR
+    TM["TIME-MACHINE
+History"] --> P["PULSE
+Change"]
+    P --> TR["TRACE
+Causality"]
+    TR --> B["BLACKBOX
+Reconstruction"]
+    B --> REC["RECOVER
+Restoration"]
+    REC --> F["FIRSTLIGHT
+Initial response"]
+    F --> W["WAKE
+Human intervention"]
+```
 
-Its responsibilities are:
+## Context systems
 
-- ecosystem architecture
-- cross-system boundaries
-- shared terminology
-- architecture decisions
-- operational conventions
-- public documentation
+- **GRID** provides dependency and topology context.
+- **GHOST** provides unknown, orphaned, and inventory context.
+- **EVAC** explores simulation and resilience.
+- **RELIEF-OS** explores resource allocation and logistics.
 
-## Cross-system rules
+These are contextual relationships, not defined runtime dependencies.
 
-### Loose coupling
+## Boundary rules
 
-Systems should communicate through explicit contracts rather than depending on each other's internal implementation.
+### Each project owns its domain
 
-### Ownership
+A project should own the concepts, state transitions, invariants, and interfaces specific to its mission.
 
-Every persistent piece of data should have a clear owning system.
+### Cross-project integration requires a contract
 
-### Idempotency
+Before integration, document purpose, owner, input contract, output contract, failure behavior, versioning, trust boundary, observability, and retry/idempotency behavior.
 
-Automated operations should be safe to retry where practical.
+### Do not centralize by default
 
-### Observability
+Shared code is not automatically shared architecture. If a common abstraction is still evolving, keeping it inside the owning project is usually safer than creating a premature platform dependency.
 
-Important operations should expose enough state to understand what happened, why it happened, and whether it completed successfully.
+### Preserve epistemic boundaries
 
-### Human control
+Systems dealing with evidence and uncertainty must distinguish observation, evidence, interpretation, hypothesis, decision, action, and outcome.
 
-Actions with significant external or irreversible effects should have explicit approval or safety boundaries.
+A downstream system must not silently upgrade uncertainty into fact.
 
-### Replaceability
+## Public/private boundary
 
-External providers should sit behind stable interfaces where provider substitution is a realistic requirement.
+Public repositories may describe architecture, research, source code, and intended direction.
 
-## Architecture evolution
+Detailed agent instructions and implementation context may remain local:
 
-Change architecture when the current boundary creates measurable operational, reliability, security, or maintenance problems.
+```text
+AGENTS.md
+.agent/
+├── requirements.md
+├── data-model.md
+├── interfaces.md
+├── invariants.md
+└── implementation.md
+```
 
-Avoid centralizing functionality merely to reduce short-term duplication.
+Ignored files are not a security mechanism. Secrets and sensitive material must never be protected merely by .gitignore.
 
-When a cross-system decision materially changes boundaries or contracts, document it as an Architecture Decision Record.
+## Architecture decision records
+
+Material cross-project decisions should be recorded in docs/decisions/.
+
+Each decision should state:
+
+1. Context
+2. Decision
+3. Alternatives considered
+4. Consequences
+5. Revisit conditions
+
+## Evolution rule
+
+Change an architectural boundary when there is a concrete problem involving correctness, reliability, security, maintainability, or operational cost.
+
+Do not create coupling just because two project names appear in the same diagram.
