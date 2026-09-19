@@ -1,41 +1,47 @@
 # TITORA Roadmap
 
-This roadmap describes direction, not promises. Items should move from ideas to implementation only when ownership, scope, and measurable outcomes are defined.
+This roadmap governs the TITORA index and architecture layer. It is not a delivery roadmap for the individual projects.
 
-## Phase 1 — Foundation
+## Phase 1 — Public foundation
 
-- [x] Establish TITORA repository
-- [x] Define core ecosystem systems
-- [x] Publish architecture entry point
-- [x] Establish contribution and security guidance
-- [ ] Add architecture decision records
+- [x] Establish TITORA as the project ecosystem index
+- [x] Define the project families
+- [x] Publish the 11-system map
+- [x] Document public/private engineering boundaries
+- [x] Document architecture principles
+- [ ] Add architecture decision records as decisions are made
+- [ ] Add project status metadata only when verified
 
-## Phase 2 — System mapping
+## Phase 2 — Project map
 
-- [ ] Map DOOB boundaries and execution flows
-- [ ] Map KARADAVI knowledge and semantic layers
-- [ ] Map SMXM growth and media layers
-- [ ] Document cross-system dependencies
+- [x] Document missions and core questions for the 11 systems
+- [ ] Add canonical links only after repository visibility is confirmed
+- [ ] Add project-specific architecture references
+- [ ] Add a consistent status vocabulary
+- [ ] Add a changelog for TITORA-level architectural changes
+
+## Phase 3 — Cross-project architecture
+
+- [ ] Document shared terminology where it is genuinely stable
+- [ ] Document candidate integration boundaries
 - [ ] Document data ownership
+- [ ] Document evidence/provenance conventions
+- [ ] Document interoperability principles
+- [ ] Record decisions as ADRs rather than burying them in prose
 
-## Phase 3 — Operational conventions
+## Phase 4 — Public project intelligence
 
-- [ ] Define common event terminology
-- [ ] Define observability conventions
-- [ ] Define failure and retry expectations
-- [ ] Define provider integration boundaries
-- [ ] Document security and trust boundaries
+- [ ] Add verified repository metadata
+- [ ] Add links to public demos/docs where they exist
+- [ ] Add architecture diagrams for major project relationships
+- [ ] Add research references where external sources materially inform the architecture
 
-## Phase 4 — Intelligence layer
+## Non-goals
 
-- [ ] Document signal → decision → execution patterns
-- [ ] Document entity → relationship → knowledge patterns
-- [ ] Define reusable automation concepts
-- [ ] Identify opportunities for shared infrastructure without creating unnecessary coupling
+TITORA should not:
 
-## Phase 5 — Public ecosystem
-
-- [ ] Maintain system architecture diagrams
-- [ ] Keep implementation repositories linked and current
-- [ ] Publish meaningful architecture changes
-- [ ] Maintain a public changelog for ecosystem-level decisions
+- become a monorepo for the 11 systems
+- create shared infrastructure without a concrete need
+- claim implementation status from documentation
+- expose private .agent/ engineering context
+- turn conceptual relationships into mandatory runtime dependencies
